@@ -1936,13 +1936,13 @@
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 
 		.item header {
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding: 0.2em 0 0.8em 0;
 			font-size: 0.8em;
 		}
 
@@ -2071,7 +2071,7 @@
 
 		#nav ul li a {
 			display: block;
-			padding: 0.5em 1.5em 0.5em 1.5em;
+			padding: 0em 1em 0em 1em;
 			color: rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 			outline: 0;
@@ -2557,4 +2557,8 @@
 					margin-top: 0;
 				}
 
+	}
+
+	.contato{
+		text-align: left;
 	}

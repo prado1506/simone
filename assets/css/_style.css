@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/background.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ff432e;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+
+/**** Start Section Title Section ****/
+
+.section-title h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    text-transform: none;
+    color: #666 !important;
+    //font-style: italic;
+}
+
+
+/**** Start Logo Section ****/
+
+.logo span {
+    color: #999;
+}
+
+
+/**** Start Background Color ****/
+
+.blue {
+    background: #28abe3;
+}
+
+.ocean-blue {
+    background: #3212ff;
+}
+
+.green {
+    background: #72bf48;
+}
+
+.red {
+    background: #ff432e;
+}
+
+.light-red {
+    background: #fb6648;
+}
+
+.light-orange {
+    background: #fa6900;
+}
+
+.color {
+    background: #0eceab;
+}
+
+
+/**** Start Main Body Section ****/
+
+.mainbody-section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+}
+
+.menu-item a {
+    display: block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+}
+
+.menu-item a p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.menu-item a i {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.menu-item:hover a {
+    -webkit-animation: wobble;
+    animation: wobble;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    text-decoration: none;
+    //color: #333;
+}
+
+.disabled {
+    pointer-events: none;
+    /*This makes it not clickable*/
+    opacity: .8;
+    /*This grays it out to look disabled*/
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .menu-item {
+        display: inline-block;
+        width: 32.8%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .menu-item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .menu-item a i {
+        font-size: 32px;
+    }
+    .menu-item a p {
+        font-size: 16px;
+    }
+}
+
+.home-slider img {
+    width: 100%;
+    height: auto;
+}
+
+.home-slider .carousel-indicators {
+    position: absolute;
+    bottom: 10%;
+}
+
+.home-slider .carousel-indicators .active {
+    background-color: #ff432e;
+}
+
+.copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    background: rgba( 0, 0, 0, .7);
+}
+
+
+/**** Start Modal Section ****/
+
+.section-modal .modal-content {
+    font-weight: 300;
+    min-height: 100%;
+    padding: 100px 0 !important;
+    color: #888;
+    border: 0 !important;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.section-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.section-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.section-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #333;
+}
+
+.section-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #333;
+}
+
+.sumario-video {
+    margin-left: 30px;
+}
+
+
+/**** Start Line divisor for Media Section ****/
+
+hr.media {
+    padding: 0;
+    text-align: center;
+    color: #bbb;
+    border: none;
+    border-top: medium double #bbb;
+}
+
+hr.media:after {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    position: relative;
+    top: -.7em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '\f03d';
+    background: white;
+}
+
+a.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+
+/* ajuste para nao mostrar o download */
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 15px);
+    /* Adjust as needed */
+}
